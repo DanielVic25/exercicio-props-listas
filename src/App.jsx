@@ -1,10 +1,15 @@
 import BotaoAcao from './components/BotaoAcao';
 import Produto from './components/Produto';
 import Cartao from './components/Cartao';
+import AlternarVisibilidade from './components/AlternarVisibilidade';
+import Contador from './components/Contador';
+import EspelhamentoInput from './components/EspelhamentoInput';
 
 import './App.css'
 
 function App() {
+
+
   const alunos = [
     {id: 1, nome: 'Daniel' , nota: 8.6},
     {id: 2, nome: 'Maria' , nota: 9.2},
@@ -114,6 +119,16 @@ function App() {
           {listaVazia.map((item, index) => <li key={index}>{item}</li>)}
         </ul>
       )}
+
+      <hr />
+
+      <div style={{ padding: '40px', maxWidth: '600px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
+        <h1 style={{textAlign:'center', color: '#333'}}>Atividade State e Eventos</h1>
+
+        <Contador />
+        <EspelhamentoInput />
+        <AlternarVisibilidade />
+      </div>
     </>
   )
 }
