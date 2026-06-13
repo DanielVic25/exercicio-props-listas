@@ -4,6 +4,10 @@ import Cartao from './components/Cartao';
 import AlternarVisibilidade from './components/AlternarVisibilidade';
 import Contador from './components/Contador';
 import EspelhamentoInput from './components/EspelhamentoInput';
+import TituloDinamico from './components/TituloDinamico';
+import ListaUsuarios from './components/ListaUsuarios';
+import BuscaPost from './components/BuscaPost';
+
 
 import './App.css'
 
@@ -121,7 +125,7 @@ function App() {
       )}
 
       <hr />
-
+      <h2>Atividade State e Eventos</h2>
       <div style={{ padding: '40px', maxWidth: '600px', margin: '0 auto', fontFamily: 'Arial, sans-serif' }}>
         <h1 style={{textAlign:'center', color: '#333'}}>Atividade State e Eventos</h1>
 
@@ -129,6 +133,20 @@ function App() {
         <EspelhamentoInput />
         <AlternarVisibilidade />
       </div>
+
+      <hr />
+
+      <h2>Atividades: useEffect e APIs</h2>
+      <div style={{ padding: '20px', maxWidth: '800px', margin: '0 auto', fontFamily: 'sans-serif' }}>
+      <h2 style={{ borderBottom: '2px solid #333', paddingBottom: '10px' }}>
+        Atividades: useEffect e APIs
+      </h2>
+      
+      <TituloDinamico />
+      <ListaUsuarios />
+      <BuscaPost />
+      
+    </div>
     </>
   )
 }
